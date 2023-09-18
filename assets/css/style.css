@@ -7,7 +7,6 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
-
 video {
   max-width: 100%;
   height: auto;
@@ -16,7 +15,6 @@ video {
   padding-bottom: 15px;
   border-radius: 15px;
 }
-
 /* Estilo da Scroll Bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -29,11 +27,9 @@ video {
     border-radius: 12px;
     transition: all 0.3s ease;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: #f39200;
 }
-
 /* Estilo da área de Navegação */
 nav{
   position: fixed;
@@ -192,6 +188,14 @@ section .content{
   justify-content: space-between;
   align-items: center;
 }
+.explain_radio {
+  background: #fff8eb;
+}
+.explain_radio .about-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .tecnology {
   background: #fcfcfc;
 }
@@ -239,6 +243,15 @@ section .title span::after{
 }
 .about-details .right{
   width: 55%;
+}
+.explain_radio .about-details .left{
+  width: 45%;
+}
+.explain_radio .left img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 35px;
 }
 .tecnology .about-details .left{
   width: 45%;
@@ -544,6 +557,15 @@ footer .text span a:hover{
     justify-content: center;
     width: 100%;
   }
+  .explain_radio .about-details{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .explain_radio .about-details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
   .tecnology .about-details{
     justify-content: center;
     flex-direction: column;
@@ -564,6 +586,10 @@ footer .text span a:hover{
 }
 @media (max-width: 900px) {
   .about .left img{
+    height: 350px;
+    width: 350px;
+  }
+  .explain_radio .left img{
     height: 350px;
     width: 350px;
   }
