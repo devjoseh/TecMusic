@@ -1,4 +1,4 @@
-// Sticky Navigation Menu JS Code
+// Navegação pelo botão de subir
 let nav = document.querySelector("nav");
 let scrollBtn = document.querySelector(".scroll-button a");
 console.log(scrollBtn);
@@ -11,10 +11,9 @@ window.onscroll = function() {
     nav.classList.remove("sticky");
     scrollBtn.style.display = "none";
   }
-
 }
 
-// Side NavIgation Menu JS Code
+// Navegação pelo menu lateral mobile
 let body = document.querySelector("body");
 let navBar = document.querySelector(".navbar");
 let menuBtn = document.querySelector(".menu-btn");
@@ -34,12 +33,14 @@ cancelBtn.onclick = function(){
   scrollBtn.style.pointerEvents = "auto";
 }
 
-// Side Navigation Bar Close While We Click On Navigation Links
+// Fechar o menu de navegação lateral mobile ao clicar em algum tópico
 let navLinks = document.querySelectorAll(".menu li a");
 for (var i = 0; i < navLinks.length; i++) {
   navLinks[i].addEventListener("click" , function() {
     navBar.classList.remove("active");
     menuBtn.style.opacity = "1";
     menuBtn.style.pointerEvents = "auto";
+    body.style.overflow = "auto";
+    scrollBtn.style.pointerEvents = "auto";
   });
 }

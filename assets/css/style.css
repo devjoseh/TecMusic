@@ -1,12 +1,13 @@
 /* Google Font CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
 }
+
 video {
   max-width: 100%;
   height: auto;
@@ -15,6 +16,7 @@ video {
   padding-bottom: 15px;
   border-radius: 15px;
 }
+
 /* Estilo da Scroll Bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -30,6 +32,7 @@ video {
 ::-webkit-scrollbar-thumb:hover {
     background: #f39200;
 }
+
 /* Estilo da área de Navegação */
 nav{
   position: fixed;
@@ -188,14 +191,6 @@ section .content{
   justify-content: space-between;
   align-items: center;
 }
-.explain_radio {
-  background: #fff8eb;
-}
-.explain_radio .about-details{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .tecnology {
   background: #fcfcfc;
 }
@@ -243,15 +238,6 @@ section .title span::after{
 }
 .about-details .right{
   width: 55%;
-}
-.explain_radio .about-details .left{
-  width: 45%;
-}
-.explain_radio .left img{
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
-  border-radius: 35px;
 }
 .tecnology .about-details .left{
   width: 45%;
@@ -340,21 +326,41 @@ section .button button:hover{
   color: #df8600;
 }
 
-/* My Skills CSS */
-.skills .title{
+/* Secão Sobre Rádio e IA*/
+.radio {
+  background: #fff8eb;
+}
+.radio .about-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio .about-details .left{
+  width: 45%;
+}
+.radio .left img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 35px;
+}
+
+/* Seção sobre o Projeto */
+.project .title{
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 }
-.skills .title span{
+.project .title span{
   color: #000;
   font-size: 30px;
   font-weight: 600;
   position: relative;
   padding-bottom: 8px;
 }
-.skills .title span::before,
-.skills .title span::after{
+.project .title span::before,
+.project .title span::after{
   content: '';
   position: absolute;
   height: 3px;
@@ -363,115 +369,69 @@ section .button button:hover{
   left: 0;
   bottom: 0;
 }
-.skills .title span::after{
+.project .title span::after{
   bottom: -7px;
   width: 70%;
   left: 50%;
   transform: translateX(-50%);
 }
-
-.skills{
+.project{
   background: #fff8eb;
 }
-.skills .content{
+.project .content{
   margin: 0 auto;
   padding: 30px 0;
 }
-.skills .skills-details{
+.project .project-details{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.skills-details .text{
+.project-details .text{
   width: 80%;
   text-align: center;
   margin: auto;
 }
-.skills-details p{
+.project-details p{
   color: #0E2431;
   text-align: center;
 }
-.skills .skills-details .experience{
+.project .project-details .experience{
   width: 80%;
   text-align: center;
   margin: auto;
 }
-.skills-details .experience .num{
+.project-details .experience .num{
   color: #0E2431;
   font-size: 80px;
 }
-.skills-details .experience .exp{
+.project-details .experience .exp{
   color: #0E2431;
   margin-left: 20px;
   font-size: 18px;
   font-weight: 500;
   margin: 0 6px;
 }
-.skills-details .boxes{
+.project-details .boxes{
   width: 45%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.skills-details .box{
+.project-details .box{
   width: calc(100% / 2 - 20px);
   margin: 20px 0;
 }
-.skills-details .boxes .topic{
+.project-details .boxes .topic{
   font-size: 20px;
   color: #df8600;
 }
-.skills-details .boxes .per{
+.project-details .boxes .per{
   font-size: 60px;
   color: #df8600;
 }
 
-/* My Services CSS */
-.services .boxes{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.services .boxes .box{
-  margin: 20px 0;
-  width: calc(100% / 3 - 20px);
-  text-align: center;
-  border-radius: 12px;
-  padding: 30px 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
-  cursor: default;
-  transition: all 0.4s ease;
-}
-.services .boxes .box:hover{
-  background: #df8600;
-  color: #fff;
-}
-.services .boxes .box .icon{
-  height: 50px;
-  width: 50px;
-  background: #df8600;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 50px;
-  font-size: 18px;
-  color: #fff;
-  margin: 0 auto 10px auto;
-  transition: all 0.4s ease;
-}
-.boxes .box:hover .icon{
-  background-color: #fff;
-  color: #df8600;
-}
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
-  color: #0E2431;
-  transition: all 0.4s ease;
-}
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
-  color: #fff;
-}
-/* Contact Me CSS */
+/* Seção de Contato / Redes Sociais */
 .contact{
   background: #f3f6fb;
 }
@@ -508,7 +468,7 @@ section .button button:hover{
   color: #df8600;
 }
 
-/* Footer CSS */
+/* Seção do Rodapé */
 footer{
   background: linear-gradient(0deg, hsla(203, 22%, 7%, 1) 0%, hsla(193, 8%, 23%, 1) 100%);
   padding: 15px 0;
@@ -527,7 +487,8 @@ footer .text span a{
 footer .text span a:hover{
   text-decoration: underline;
 }
-/* Scroll TO Top Button CSS */
+
+/* Botão de scrollar até o topo */
 .scroll-button a{
   position: fixed;
   bottom: 20px;
@@ -557,11 +518,11 @@ footer .text span a:hover{
     justify-content: center;
     width: 100%;
   }
-  .explain_radio .about-details{
+  .radio .about-details{
     justify-content: center;
     flex-direction: column;
   }
-  .explain_radio .about-details .left{
+  .radio .about-details .left{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -579,17 +540,13 @@ footer .text span a:hover{
     width: 90%;
     margin: 40px 0;
   }
-  .services .boxes .box{
-    margin: 20px 0;
-    width: calc(100% / 2 - 20px);
-  }
 }
 @media (max-width: 900px) {
   .about .left img{
     height: 350px;
     width: 350px;
   }
-  .explain_radio .left img{
+  .radio .left img{
     height: 350px;
     width: 350px;
   }
@@ -641,22 +598,18 @@ footer .text span a:hover{
   .home .text-three{
     font-size: 35px;
   }
-  .skills .skills-details{
+  .project .project-details{
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
-  .skills-details .text{
+  .project-details .text{
     width: 100%;
     margin-bottom: 50px;
   }
-  .skills-details .boxes{
+  .project-details .boxes{
     justify-content: center;
     align-items: center;
-    width: 100%;
-  }
-  .services .boxes .box{
-    margin: 20px 0;
     width: 100%;
   }
   .contact .text{
@@ -671,7 +624,7 @@ footer .text span a:hover{
   .home .text-three{
     font-size: 33px;
   }
-  .skills-details .boxes .per{
+  .project-details .boxes .per{
     font-size: 50px;
     color: #df8600;
   }
