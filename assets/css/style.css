@@ -438,6 +438,41 @@ section .button button:hover{
   color: #df8600;
 }
 
+/* Seção de Participantes do projeto */
+.members .boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.members .boxes .box{
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 18px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+.members .boxes .box .icon{
+  height: 50px;
+  width: 50px;
+  background: #df8600;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+.members img {
+  height: 275px;
+  width: 275px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
 /* Seção de Contato / Redes Sociais */
 .contact{
   background: #f3f6fb;
@@ -547,6 +582,10 @@ footer .text span a:hover{
     width: 90%;
     margin: 40px 0;
   }
+  .members .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
 }
 @media (max-width: 900px) {
   .about .left img{
@@ -617,6 +656,10 @@ footer .text span a:hover{
   .project-details .boxes{
     justify-content: center;
     align-items: center;
+    width: 100%;
+  }
+  .members .boxes .box{
+    margin: 20px 0;
     width: 100%;
   }
   .contact .text{
